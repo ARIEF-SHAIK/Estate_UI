@@ -21,13 +21,16 @@ const Navbar = () => {
           {navLinks.map((link, index) => (
             <li
               key={link}
-              className={`relative cursor-pointer ${
+              className={`group cursor-pointer flex flex-col items-center ${
                 index === 0 ? "text-purple-700" : "text-black"
               }`}
             >
-              {link}
+              <span className="transition-colors group-hover:text-purple-700">
+                {link}
+              </span>
+              
               {index === 0 && (
-                <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-2 h-2 bg-purple-700 rounded-full"></span>
+                <span className="h-2 w-2 rounded-full bg-purple-700 mt-1 scale-0 group-hover:scale-100 transition-all"></span>
               )}
             </li>
           ))}
