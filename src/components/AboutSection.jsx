@@ -1,15 +1,19 @@
 const AboutSection = () => {
   return (
-    <section className="w-full bg-white py-16">
-      <div className="max-w-7xl mx-auto px-6 lg:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 md:pb-16">
-          <article>
+    <section className="w-full bg-[#f6f6f8] py-16">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* GRID */}
+        <div className="hidden md:grid grid-cols-3 grid-rows-2">
+
+          {/* 1 - Top Left */}
+          <div className="p-10 border-r border-b border-gray-300">
             <div className="flex items-center gap-2 mb-4">
               <span className="bg-[#9E2349] h-1 w-6"></span>
               <p className="text-[#9E2349] font-semibold">About Us</p>
             </div>
 
-            <h2 className="text-2xl md:text-3xl font-serif font-semibold">
+            <h2 className="text-2xl font-serif font-semibold leading-tight">
               Lilypad is the only Real
               <br />
               Estate Investment tool
@@ -18,97 +22,71 @@ const AboutSection = () => {
               <br />
               business
             </h2>
-          </article>
+          </div>
 
-          <article className="flex flex-col gap-4">
-            <div className="flex items-center gap-4">
-              <img
-                src="/about1.png"
-                alt="icon"
-                className="w-20 hover:scale-110 transition duration-300 cursor-pointer"
-              />
-              <h3 className="font-semibold">
-                Become a Data-Driven
-                <br />
-                Investor
-              </h3>
-            </div>
-            <p className="text-sm text-gray-600 mt-1">
+          {/* 2 - Top Center */}
+          <div className="p-10 border-r border-b border-gray-300">
+            <img src="/about1.png" className="w-16 mb-4 hover:scale-110 transition duration-300 cursor-pointer" />
+            <h3 className="font-semibold mb-2">
+              Become a Data-Driven
+              <br />
+              Investor
+            </h3>
+            <p className="text-sm text-gray-600">
               Lilypads is the cloud-based real estate investment platform that
-              helps you make data-driven decisions for long-term investment
-              objectives.
+              helps you make data-driven investment decisions and assists with reaching your long term investment objectives.
             </p>
-          </article>
+          </div>
 
-          <article className="flex flex-col gap-4">
-            <div className="flex items-center gap-4">
-              <img
-                src="/about2.png"
-                alt="icon"
-                className="w-20 hover:scale-110 transition duration-300 cursor-pointer"
-              />
-              <h3 className="font-semibold">
-                Lilypads can help you
-                <br />
-                make smarter decisions.
-              </h3>
-            </div>
-            <p className="text-sm text-gray-600 mt-1">
-              Streamline your investment process and collaborate in reaching
-              your long-term goals.
+          {/* 3 - Top Right */}
+          <div className="p-10 border-b border-gray-300">
+            <img src="/about2.png" className="w-16 mb-4 hover:scale-110 transition duration-300 cursor-pointer" />
+            <h3 className="font-semibold mb-2">
+              Lilypads can help you
+              <br />
+              make smarter decisions.
+            </h3>
+            <p className="text-sm text-gray-600">
+              Streamline your investment evaluation process and collaborate in
+              reaching your long term investment objectives.
             </p>
-          </article>
+          </div>
+
+          {/* 4 - Bottom Left */}
+          <div className="p-10 border-r border-gray-300">
+            <img src="/about3.png" className="w-16 mb-4 hover:scale-110 transition duration-300 cursor-pointer" />
+            <h3 className="font-semibold mb-2">Manager Due Diligence</h3>
+            <p className="text-sm text-gray-600">
+              Evaluate managers against your objectives using traditional risk
+              metrics with the addition of factor analysis. All it takes is a set of returns
+            </p>
+          </div>
+
+          {/* 5 - Bottom Center */}
+          <div className="p-10 border-r border-gray-300">
+            <img src="/about4.png" className="w-16 mb-4 hover:scale-110 transition duration-300 cursor-pointer" />
+            <h3 className="font-semibold mb-2">Optimize Asset Allocation</h3>
+            <p className="text-sm text-gray-600">
+              Understand the underlying risk drivers in your portfolio using the Lilypads analysis factors and then optimize that portfolio based on objectives
+            </p>
+          </div>
+
+          {/* 6 - Bottom Right */}
+          <div className="p-10">
+            <img src="/about5.png" className="w-16 mb-4 hover:scale-110 transition duration-300 cursor-pointer" />
+            <h3 className="font-semibold mb-2">Our Subscribers</h3>
+            <p className="text-sm text-gray-600">
+              Serving a constellation of global subscribers Pension funds, Funds of Funds, Banks, Family offices, Asset managers, Wealth Managers
+            </p>
+          </div>
+
         </div>
 
-        <div className="border-t border-black my-10"></div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
-          <article className="flex flex-col gap-4">
-            <div className="flex items-center gap-4">
-              <img
-                src="/about3.png"
-                alt="icon"
-                className="w-20 hover:scale-110 transition duration-300 cursor-pointer"
-              />
-              <h3 className="font-semibold">Manager Due Diligence</h3>
-            </div>
-
-            <p className="text-sm text-gray-600 mt-1">
-              Evaluate managers using traditional risk metrics with added factor
-              analysis to reach your objectives.
-            </p>
-          </article>
-
-          <article className="flex flex-col gap-4">
-            <div className="flex items-center gap-4">
-              <img
-                src="/about4.png"
-                alt="icon"
-                className="w-20 hover:scale-110 transition duration-300 cursor-pointer"
-              />
-              <h3 className="font-semibold">Optimize Asset Allocation</h3>
-            </div>
-            <p className="text-sm text-gray-600 mt-1">
-              Understand risk drivers using Lilypad factors and optimize your
-              portfolio based on clear objectives.
-            </p>
-          </article>
-
-          <article className="flex flex-col gap-4">
-            <div className="flex items-center gap-4">
-              <img
-                src="/about5.png"
-                alt="icon"
-                className="w-20 hover:scale-110 transition duration-300 cursor-pointer"
-              />
-              <h3 className="font-semibold">Our Subscribers</h3>
-            </div>
-            <p className="text-sm text-gray-600 mt-1">
-              Serving global subscribers — banks, family offices, pension funds,
-              investment managers and more.
-            </p>
-          </article>
+        {/* MOBILE */}
+        <div className="md:hidden space-y-10">
+          {/* your mobile layout */}
         </div>
+
       </div>
     </section>
   );
