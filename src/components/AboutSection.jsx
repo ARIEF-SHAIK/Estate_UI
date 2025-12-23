@@ -3,10 +3,10 @@ const AboutSection = () => {
     <section className="w-full bg-[#f6f6f8] py-16">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* GRID */}
+        
         <div className="hidden md:grid grid-cols-3 grid-rows-2">
 
-          {/* 1 - Top Left */}
+         
           <div className="p-10 border-r border-b border-gray-300">
             <div className="flex items-center gap-2 mb-4">
               <span className="bg-[#9E2349] h-1 w-6"></span>
@@ -24,7 +24,7 @@ const AboutSection = () => {
             </h2>
           </div>
 
-          {/* 2 - Top Center */}
+         
           <div className="p-10 border-r border-b border-gray-300">
             <img src="/about1.png" className="w-16 mb-4 hover:scale-110 transition duration-300 cursor-pointer" />
             <h3 className="font-semibold mb-2">
@@ -38,7 +38,7 @@ const AboutSection = () => {
             </p>
           </div>
 
-          {/* 3 - Top Right */}
+         
           <div className="p-10 border-b border-gray-300">
             <img src="/about2.png" className="w-16 mb-4 hover:scale-110 transition duration-300 cursor-pointer" />
             <h3 className="font-semibold mb-2">
@@ -52,7 +52,7 @@ const AboutSection = () => {
             </p>
           </div>
 
-          {/* 4 - Bottom Left */}
+        
           <div className="p-10 border-r border-gray-300">
             <img src="/about3.png" className="w-16 mb-4 hover:scale-110 transition duration-300 cursor-pointer" />
             <h3 className="font-semibold mb-2">Manager Due Diligence</h3>
@@ -62,7 +62,7 @@ const AboutSection = () => {
             </p>
           </div>
 
-          {/* 5 - Bottom Center */}
+         
           <div className="p-10 border-r border-gray-300">
             <img src="/about4.png" className="w-16 mb-4 hover:scale-110 transition duration-300 cursor-pointer" />
             <h3 className="font-semibold mb-2">Optimize Asset Allocation</h3>
@@ -71,7 +71,7 @@ const AboutSection = () => {
             </p>
           </div>
 
-          {/* 6 - Bottom Right */}
+          
           <div className="p-10">
             <img src="/about5.png" className="w-16 mb-4 hover:scale-110 transition duration-300 cursor-pointer" />
             <h3 className="font-semibold mb-2">Our Subscribers</h3>
@@ -82,9 +82,9 @@ const AboutSection = () => {
 
         </div>
 
-        {/* MOBILE */}
+      
         <div className="md:hidden space-y-10">
-          {/* your mobile layout */}
+          
         </div>
 
       </div>
