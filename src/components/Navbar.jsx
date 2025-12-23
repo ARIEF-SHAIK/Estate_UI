@@ -17,21 +17,18 @@ const Navbar = () => {
           <img src="/logo.png" alt="" />
         </div>
 
-        <ul className="hidden lg:flex items-center gap-8 text-sm font-medium">
+        <ul className="hidden lg:flex items-center gap-10 text-sm font-medium">
           {navLinks.map((link, index) => (
             <li
               key={link}
-              className={`group cursor-pointer flex flex-col items-center ${
-                index === 0 ? "text-purple-700" : "text-black"
-              }`}
+              className="group cursor-pointer flex flex-col items-center"
             >
               <span className="transition-colors group-hover:text-purple-700">
                 {link}
               </span>
               
-              {index === 0 && (
                 <span className="h-2 w-2 rounded-full bg-purple-700 mt-1 scale-0 group-hover:scale-100 transition-all"></span>
-              )}
+              
             </li>
           ))}
         </ul>
